@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta
+        http-equiv="X-UA-Compatible"
+        content="IE=edge"
+    />
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    />
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- How to create a form -->
+    <!-- Insert formspree website after action -->
+    <!-- action="https://formspree.io/f/mnqwywog" -->
+    <!--  This is for Martyna https://formspree.io/f/xbjwewpa-->
+    <form
+        action="https://formspree.io/f/xbjwewpa"
+        method="POST"
+        target="_blank"
+    >
+        <!-- How to create a label -->
+        <label for="fullName">Full Name</label>
+        <br />
+        <input
+            id="fullName"
+            type="text"
+            placeholder="Full Name"
+            required
+            name="full-name"
+        />
+
+        <br />
+        <br />
+
+        <label for="age">Age</label>
+        <br />
+
+        <input
+            type="number"
+            placeholder="Age"
+            required
+            min="0"
+            max="130"
+            name="age"
+        />
+        <br />
+        <br />
+
+        <select
+            id="state"
+            required
+            name="state"
+        >
+            <!-- Can use selected instead of default -->
+            <option
+                value="state"
+                default
+                hidden
+                required
+            >Select a colour</option>
+            <option value="act">ACT</option>
+            <option value="sa">SA</option>
+            <option value="vic">VICTORIA</option>
+            <option value="nsw">NSW</option>
+            <option value="qld">QLD</option>
+            <option value="tas">TAS</option>
+            <option value="wa">WA</option>
+            <option value="nt">NT</option>
+        </select>
+
+        <br />
+        <br />
+
+
+        <label for="email">Email</label>
+        <br />
+        <input
+            required
+            id="email"
+            type="email"
+            placeholder="Email"
+            name="email"
+        />
+
+        <br />
+        <br />
+
+        <label for="phone">Phone Number: </label>
+        <input
+            type="tel"
+            pattern="[0]{1}[0-9]{9}"
+            placeholder="Phone Number"
+            required
+            name="phone-number"
+        />
+
+        <br />
+        <br />
+
+        <label for="message">Message</label>
+        <br />
+        <textarea
+            id="message"
+            required
+            placeholder="Please enter a message"
+            rows="4"
+            cols="40"
+            name="message"
+        ></textarea>
+        <br />
+        <br />
+
+        <input type="submit" />
+    </form>
+</body>
+
+</html>
+<!--  -->
+<!--  -->

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta
+        http-equiv="X-UA-Compatible"
+        content="IE=edge"
+    />
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    />
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- How to create a form -->
+    <!-- Insert formspree website after action -->
+    <form
+        action=""
+        method="POST"
+        target="_blank"
+    >
+        <!-- How to create a label -->
+        <label for="firstName">First Name</label>
+        <br />
+        <input
+            id="firstName"
+            type="text"
+            placeholder="First Name"
+        />
+
+        <br />
+        <br />
+
+        <label for="age">Age</label>
+        <br />
+
+        <input
+            type="number"
+            placeholder="Age"
+            required
+            min="0"
+            max="130"
+            name="age"
+        />
+        <br />
+        <br />
+
+        <label for="email">Email</label>
+        <br />
+        <input
+            required
+            id="email"
+            type="email"
+            placeholder="Email"
+        />
+
+        <br />
+        <br />
+
+        <label for="password">Password</label>
+        <br />
+        <input
+            type="text"
+            placeholder="password"
+            minlength="4"
+            maxlength="8"
+        />
+
+        <br />
+        <br />
+
+        <label for="phone">Phone Number: </label>
+        <input
+            type="tel"
+            pattern="[0]{1}[0-9]{9}"
+            placeholder="Phone Number"
+        />
+
+        <br />
+        <br />
+
+        <label for="colour">Colour</label>
+
+        <select
+            id="colour"
+            required
+        >
+            <!-- Can use selected instead of default -->
+            <option
+                value=""
+                default
+                hidden
+            >Select a colour</option>
+            <option value="blue">Blue</option>
+            <option value="red">Red</option>
+            <option value="green">Green</option>
+        </select>
+
+        <br />
+        <br />
+
+        <label for="message">Message</label>
+        <br />
+        <textarea
+            id="message"
+            required
+            placeholder="Please enter a message"
+            rows="4"
+            cols="40"
+        ></textarea>
+        <br />
+        <br />
+
+        <input type="submit" />
+    </form>
+</body>
+
+</html>
+<!--  -->
+<!--  -->
