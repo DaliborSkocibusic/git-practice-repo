@@ -1,0 +1,56 @@
+/* Selecting elemenents inside another on 
+Descencdants
+ */
+
+.boxed-content {
+    border: 2px solid black;
+    margin-bottom: 20px;
+}
+
+.boxed-content h1 {
+    color: blue;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.boxed-content h2 {
+    color: red;
+    text-decoration: underline;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.boxed-content p {
+    margin-left:50px;
+    font-style:bold;
+}
+
+.coral-and-bold {
+    color: coral;
+    font-weigth: bold;
+}
+
+.brown-para {
+    color: brown;
+}
+
+article.container {
+    color: blue;
+}
+
+div.outer-container p {
+    color: red;
+    font-weight: bold;
+}
+/* First sibling */
+div.inner-container + p {
+    text-decoration: underline;
+}
+
+/* General sibling combinator */
+div.inner-container ~ p {
+    font-style: italic;
+}
+
+/* Can also select divs too */
+div.inner-container ~ div {
+    font-style: italic;
+}

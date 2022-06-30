@@ -1,0 +1,36 @@
+/* Selecting elemenents inside another on 
+Descencdants
+ */
+
+.first-header {
+    font-size: 40px;
+}
+
+.first-paragraph  {
+    font-style: italic;
+}
+
+.second-paragraph  {
+    color:gray;
+}
+
+.third-paragraph {
+    text-decoration: underline;
+}
+
+.fourth-paragraph {
+    color:blue;
+}
+
+.second-header {
+    font-size: 30px;
+}
+
+.third-header {
+    font-size: 20px;
+}
+
+p {
+    margin-left: 50px;
+    font-size: 25px;
+}

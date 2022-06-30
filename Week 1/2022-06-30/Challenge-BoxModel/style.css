@@ -1,0 +1,43 @@
+/*  Margin / Border / Padding arguments 
+
+1 arg
+all gaps
+
+2 args - first 
+first arg top gap
+second arg left and right gap
+
+4 args - first
+first arg top pixel
+second arg right pixel
+third arg bottom pixel
+fourth arg left pixel
+
+*/
+
+p {
+    margin-left: 40px;
+}
+
+.innerclass {
+    font-family: Arial;
+    font-weight:bold;
+    background-color: #ef6fb2;
+    border: 3px solid #ef8155;
+    padding:20px;
+    padding-left:30px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    margin-right: 1px;
+    margin-left: 1px;
+}
+
+.outerclass {
+    padding: 1px;
+    background-color: #a0eb92;
+    border: 3px solid #ef8155;
+    margin-top: 1px;
+    margin-bottom: 0px;
+    margin-right: 1px;
+    margin-left: 1px;
+}

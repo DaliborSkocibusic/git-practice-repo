@@ -1,0 +1,69 @@
+/* p {
+    background-color: red;
+}
+
+p:hover {
+    background-color:blue;
+} */
+
+a:visited {
+    color:goldenrod;
+}
+
+a:link {
+    color:green;
+    text-decoration: line-through;
+}
+
+a:hover {
+    cursor:all-scroll;
+    text-decoration: none;
+}
+
+/* When you click on the link */
+a:active {
+    color:blue;
+}
+
+.wrapper > p:first-of-type {
+    color:red
+}
+
+.wrapper > h1:first-of-type {
+    color:green;
+}
+
+.wrapper > p:nth-of-type(2) {
+    font-weight:bold;
+}
+
+/* .wrapper > p:nth-of-type(4) {
+    font-style:italic;
+} */
+
+.wrapper > p:last-of-type {
+    border: 2px solid red;
+}
+
+.wrapper > p:nth-last-of-type(2) {
+    font-style:italic;
+}
+
+form > input:optional {
+    border: 1px solid green;
+}
+
+form > input:required {
+    border: 2px solid red;
+}
+
+form > input:enabled {
+    border: 1px dotted blue;
+}
+
+/* 
+    descendant selector (space)
+    child selector (>)
+    adjacent sibling selector (+)
+    general sibling selector (~)
+ */

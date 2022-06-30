@@ -1,0 +1,53 @@
+a:visited {
+    color: green;
+    font-weight: bold;
+}
+
+#visited {
+    color: green;
+    font-weight: bold;
+}
+
+a:link {
+    color: red;
+    text-decoration: line-through;
+    font-weight: bold;
+}
+
+#notvisited {
+    color: red;
+    text-decoration: line-through;
+    font-weight: bold;
+}
+
+a:hover {
+    cursor: all-scroll;
+    text-decoration: none;
+    color: blue;
+    font-weight: bold;
+}
+
+#hover {
+    cursor: all-scroll;
+    text-decoration: none;
+    color: blue;
+    font-weight: bold;
+}
+
+/* When you click on the link */
+a:active {
+    color: yellow;
+    font-weight: bold;
+}
+
+#clicked {
+    color: yellow;
+    font-weight: bold;
+}
+
+/* 
+    descendant selector (space)
+    child selector (>)
+    adjacent sibling selector (+)
+    general sibling selector (~)
+ */

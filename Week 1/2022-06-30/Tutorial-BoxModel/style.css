@@ -1,0 +1,25 @@
+/*  Margin / Border / Padding arguments 
+
+1 arg
+all gaps
+
+2 args - first 
+first arg top gap
+second arg left and right gap
+
+4 args - first
+first arg top pixel
+second arg right pixel
+third arg bottom pixel
+fourth arg left pixel
+
+*/
+
+p {
+
+    border: 1px solid black;
+    padding: 5px;
+    margin: 20px;
+    color: blue;
+    text-align: center;
+}

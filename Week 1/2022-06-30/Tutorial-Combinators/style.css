@@ -1,0 +1,30 @@
+/* Selecting elemenents inside another on 
+Descencdants
+ */
+
+div.container {
+    color: red;
+}
+
+article.container {
+    color: blue;
+}
+
+div.outer-container p {
+    color: red;
+    font-weight: bold;
+}
+/* First sibling */
+div.inner-container + p {
+    text-decoration: underline;
+}
+
+/* General sibling combinator */
+div.inner-container ~ p {
+    font-style: italic;
+}
+
+/* Can also select divs too */
+div.inner-container ~ div {
+    font-style: italic;
+}
