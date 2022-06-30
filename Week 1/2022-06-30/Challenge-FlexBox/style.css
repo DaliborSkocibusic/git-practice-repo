@@ -1,0 +1,43 @@
+/* div {
+    display: inline-block;
+    margin: 0px 20px;
+} */
+
+/* This is our flex container */
+#main {
+    height: 500px;
+    display: flex;
+    width: 90vh;
+    background-color: aqua;
+
+    /* Move all our cards horizontally */
+    /* justify-content: centre; */
+
+    /* Move all our cards horizontally,
+    equally spaced */
+    justify-content: space-around;
+    align-items: center;
+    /* Need to put direction for flex items in container */
+    flex-direction: column;
+
+}
+
+/* This is our flex item. Nesting */
+.card {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    margin: 2px;
+
+    /* Allign spaces veritcally */
+    align-items: center;
+}
+
+#card1 {
+    background-color: blue;
+}
+
+#card2 {
+    background-color: red;
+}
