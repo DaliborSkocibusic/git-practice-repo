@@ -10,7 +10,7 @@
     width: 100%;
     background-color: whitesmoke;
     border-width: 0px;
-    margin: auto;
+    margin: 0px;
 
     /* Move all our cards horizontally */
     /* justify-content: centre; */
@@ -22,6 +22,7 @@
     /* Need to put direction for flex items in container */
     flex-direction: row;
     padding: 0px;
+    flex-wrap:wrap;
 
 }
 
@@ -31,7 +32,7 @@
     height: 200px;
     display: flex;
     justify-content: space-around;
-    margin: auto;
+    margin: 0p;
     padding: 0px;
 
     /* Allign spaces veritcally */
@@ -48,4 +49,13 @@
 
 #card3 {
     background-color: hotpink;
+}
+
+#card4 {
+    background-color: red;
+}
+
+#card5 {
+    background-color: white;
+    justify-content: left;
 }
