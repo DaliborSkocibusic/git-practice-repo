@@ -1,0 +1,20 @@
+
+//Importing other files in SCSS
+//Should be done here cos we need to have the pallete loaded first
+@use "./../Partials/palette.scss";
+//@use "./../Partials/typography";
+
+//or
+@use "./../Partials/palette.scss" as imported;
+
+.btn {
+    background-color: palette.$secondary-color;
+    border: 2px solid palette.$secondary-color;
+    border-radius: 20px;
+    cursor: pointer;
+
+    &--second {
+        color: palette.$secondary-color;
+        background-color: palette.$btn-bg-secondary;
+    }
+}

@@ -1,0 +1,32 @@
+//Importing other files in SCSS
+// Will not work as Modules/buttons overrides it
+@use "./Partials/palette.scss";
+@use "./Partials/typography.scss";
+
+//or
+//@use "./Partials/palette" as imported;
+
+//Code to add buttons directory to search path
+@use "./Modules/buttons.scss";
+
+//Code to add buttons directory to search path
+@use "./Modules/blog.scss";
+
+.intro {
+    &__title {
+        //Using/Accessing the imported variable
+        color: palette.$secondary-color;
+        //color: imported.$primary-color;
+        
+        font-family: typography.$secondary-font;
+        
+        &:hover {
+            color: palette.$color-on-hover;
+            font-family: typography.$primary-font;
+        }
+    }
+    
+    &__desc {
+        font-family: typography.$primary-font;
+    }
+}

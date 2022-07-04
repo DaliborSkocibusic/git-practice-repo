@@ -1,0 +1,51 @@
+//Mixins should go into a partials folder
+// Dont what them to compile unless we need to use them.
+
+@use "./palette.scss";
+
+@mixin flex {
+    // add some scss code
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+@mixin bg-styling {
+    background-color: palette.$primary-color;
+    border: 1px solid hotpink;
+    margin-bottom: 10px;
+}
+
+@mixin margin-padding {
+    padding: 20px;
+}
+// Parametized mixin
+
+// Default values for mixins shown below
+@mixin size-modifier($sm, $mb, $lg) {
+    &--small {
+        font-size: $sm;
+    }
+
+    &--medium {
+        font-size: $mb;
+    }
+
+    &--large {
+        font-size: $lg;
+    }
+}
+
+@mixin color-modifier($colorOne: green, $colorTwo: green, $colorThree: green) {
+    &--light {
+        color: $colorOne;
+    }
+
+    &--darker {
+        color: $colorTwo;
+    }
+
+    &--darkest {
+        color: $colorThree;
+    }
+}

@@ -1,0 +1,30 @@
+@use "./Partial/Mixins.scss";
+
+h1 {
+    color: cadetblue;
+}
+
+.navigation {
+    @include Mixins.flex;
+    height: 100px;
+    @include Mixins.bg-styling;
+    @include Mixins.margin-padding;
+}
+
+.gallery {
+    @include Mixins.flex;
+    @include Mixins.bg-styling;
+    @include Mixins.margin-padding;
+}
+
+.btn {
+    @include Mixins.size-modifier(12px, 24px, 36px);
+}
+
+.para {
+    @include Mixins.size-modifier(12px, 24px, 36px);
+
+    //Demoing that the defaul values are called whn
+    //Not enough arguments are given
+    @include Mixins.color-modifier(red, blue);
+}

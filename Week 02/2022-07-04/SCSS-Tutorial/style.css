@@ -1,0 +1,28 @@
+h1 {
+  color: red;
+}
+
+.container {
+  border: 2px solid black;
+  padding: 15px;
+}
+.container--border-pink {
+  border: 2px solid hotpink;
+}
+.container__title {
+  font-family: Arial;
+  color: green;
+}
+.container__title--underlined {
+  font-style: underline;
+}
+.container__btn {
+  background-color: green;
+  color: white;
+  border: 2px solid green;
+  padding: 5px 10px;
+}
+.container__btn--secondary {
+  background-color: white;
+  color: green;
+}

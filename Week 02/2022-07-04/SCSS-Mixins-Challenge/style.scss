@@ -1,0 +1,35 @@
+@mixin btn-default {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+@mixin border-bg(
+    $border-color,
+    $border-style-chip,
+    $border-style-pill,
+    $border-color-pill,
+    $bg-color: white
+) {
+    border: 2px solid red;
+
+    &--chip {
+        border: 2px $border-style-chip $border-color;
+        background-color: $bg-color;
+    }
+
+    &--pill {
+        border: 2px $border-style-pill $border-color-pill;
+        background-color: $bg-color;
+    }
+}
+
+div {
+    display: flex;
+    flex-direction: column;
+}
+
+.btn {
+    @include btn-default;
+    @include border-bg(blue, solid, blue, dashed);
+}

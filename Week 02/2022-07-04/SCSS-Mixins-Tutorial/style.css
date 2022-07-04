@@ -1,0 +1,53 @@
+h1 {
+  color: cadetblue;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100px;
+  background-color: rgb(0, 157, 255);
+  border: 1px solid hotpink;
+  margin-bottom: 10px;
+  padding: 20px;
+}
+
+.gallery {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgb(0, 157, 255);
+  border: 1px solid hotpink;
+  margin-bottom: 10px;
+  padding: 20px;
+}
+
+.btn--small {
+  font-size: 12px;
+}
+.btn--medium {
+  font-size: 24px;
+}
+.btn--large {
+  font-size: 36px;
+}
+
+.para--small {
+  font-size: 12px;
+}
+.para--medium {
+  font-size: 24px;
+}
+.para--large {
+  font-size: 36px;
+}
+.para--light {
+  color: red;
+}
+.para--darker {
+  color: blue;
+}
+.para--darkest {
+  color: green;
+}

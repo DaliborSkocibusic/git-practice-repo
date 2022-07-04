@@ -1,0 +1,17 @@
+.box {
+  border: 3px dashed orange;
+  padding: 20px;
+}
+.box__title {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.box__text {
+  font-family: Arial, Helvetica, sans-serif;
+}
+.box__btn {
+  background-color: lightblue;
+  border: 3px dashed orange;
+}
+.box__btn--secondary {
+  background-color: white;
+}

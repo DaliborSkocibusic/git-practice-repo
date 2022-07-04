@@ -1,0 +1,35 @@
+.btn {
+  background-color: rgba(251, 198, 99, 0.978);
+  border: 2px solid rgba(251, 198, 99, 0.978);
+  border-radius: 20px;
+  cursor: pointer;
+}
+.btn--second {
+  color: rgba(251, 198, 99, 0.978);
+  background-color: white;
+}
+
+.blog {
+  border: 2px solid rgb(0, 195, 255);
+  padding: 20px;
+  margin: 30px;
+}
+.blog__title {
+  color: rgb(0, 195, 255);
+  font-family: "Helvetica Neue";
+}
+.blog__desc {
+  font-family: "Helvetica Neue";
+}
+
+.intro__title {
+  color: rgba(251, 198, 99, 0.978);
+  font-family: "Arial";
+}
+.intro__title:hover {
+  color: red;
+  font-family: "Helvetica Neue";
+}
+.intro__desc {
+  font-family: "Helvetica Neue";
+}

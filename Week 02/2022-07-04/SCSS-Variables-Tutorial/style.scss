@@ -1,0 +1,31 @@
+
+//How to declare a variable in SCSS
+$border: 3px dashed orange;
+$border-col: green;
+$border-w: 5px;
+$border-style: dotted;
+
+$primary-font: Arial, Helvetica, sans-serif;
+$secondary-font: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+
+.box {
+    border: $border;
+    padding: 20px;
+
+    &__title {
+        font-family: $secondary-font
+    }
+
+    &__text {
+        font-family: $primary-font
+    }
+
+    &__btn {
+        background-color: lightblue;
+        border: $border;
+
+        &--secondary {
+            background-color: white;
+        }
+    }
+}

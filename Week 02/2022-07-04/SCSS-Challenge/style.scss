@@ -1,0 +1,122 @@
+.first-container {
+    border: 3px dashed green;
+    padding: 15px;
+
+    &--one-formatting {
+        font-size: 20px;
+    }
+
+    &--two-formatting {
+        font-size: 15px;
+    }
+
+    &--PargraphFormatting {
+        font-size: 15px;
+        text-decoration: line-through;
+        color: blue;
+    }
+}
+
+.secondContainer {
+    border: 2px solid coral;
+    padding: 15px;
+    margin-bottom: 30px;
+
+    &--HeadingFormatting {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    &--HeadingTwoFormatting {
+        font-size: 15px;
+    }
+
+    &--ParagraphFormatting {
+        font-size: 15px;
+        text-decoration: line-through;
+        color: blue;
+        text-align: end;
+    }
+}
+
+.header {
+    font-family: Arial;
+
+    &--border-thick {
+        border-width: 3px;
+    }
+
+    &--border-green {
+        border-color: green;
+    }
+
+    &--border-dashed {
+        border-style: dashed;
+    }
+
+    &--border-thin {
+        border-width: 2px;
+    }
+
+    &--border-orange {
+        border-color: orange;
+    }
+
+    &--border-solid {
+        border-style: solid;
+    }
+
+    &__title {
+        &--centered {
+            text-align: center;
+        }
+    }
+
+    &__para {
+        &--blue {
+            color: blue;
+        }
+
+        &--linethrough {
+            text-decoration: line-through;
+        }
+
+        &--rightalign {
+            text-align: right;
+        }
+    }
+}
+
+.container {
+    font-family: Arial;
+    border: 2px solid black;
+
+    &__title {
+        color: blue;
+    }
+
+    &__para {
+        &--red-underlined {
+            color:red;
+            text-decoration: underline;
+
+        }
+    }
+
+    &__list {
+        list-style-type: none;
+        font-family: 'Times New Roman', Times, serif;
+
+    }
+}
+
+.para [
+    &--coral-bold {
+        color: coral;
+        font-weight: bold;
+    }
+
+    &--brown {
+        color:brown;
+    }
+]

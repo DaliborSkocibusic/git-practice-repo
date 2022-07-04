@@ -1,0 +1,10 @@
+// _ at the start of a file means that scss will not compile it
+// Partials are code / variables that you dont want 
+// Added to the compiled file
+
+$primary-color: rgb(0, 195, 255);
+$secondary-color: rgba(251, 198, 99, 0.978);
+$color-on-hover: red;
+
+$border: 2px solid $primary-color;
+$btn-bg-secondary: white;
