@@ -1,0 +1,20 @@
+$german-flag: 600px; // Phone max res
+$belgian-flag: 900px; // Tablet max res
+
+@mixin german-flag {
+    @media only screen and (max-width: $german-flag) {
+        @content;
+    }
+}
+
+@mixin belgian-flag {
+    @media only screen and (min-width: ($german-flag + 1)) and (max-width: $belgian-flag) {
+        @content;
+    }
+}
+
+@mixin irish-flag {
+    @media only screen and (min-width: ($belgian-flag + 1)) {
+        @content;
+    }
+}

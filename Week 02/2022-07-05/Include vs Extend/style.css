@@ -1,0 +1,46 @@
+.blog3 {
+  display: flex;
+  justify-content: center;
+}
+
+.box, .blog {
+  background-color: grey;
+  color: darkblue;
+  display: flex;
+  justify-content: center;
+}
+.box__desc--sm {
+  font-size: 12px;
+}
+.box__desc--lg {
+  font-size: 24px;
+}
+
+.chip, .btn {
+  background-color: coral;
+  color: white;
+}
+
+.blog3 {
+  display: flex;
+  justify-content: center;
+}
+
+.blog {
+  color: red;
+}
+.blog__desc--sm {
+  font-size: 12px;
+}
+.blog__desc--lg {
+  font-size: 24px;
+}
+
+.blog2 {
+  display: flex;
+  justify-content: center;
+}
+
+.chip {
+  background-color: rgb(15, 132, 9);
+}

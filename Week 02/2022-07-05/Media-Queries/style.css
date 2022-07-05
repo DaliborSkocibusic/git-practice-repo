@@ -1,0 +1,26 @@
+* {
+  margin: 0px;
+  border: 0px;
+}
+
+.btn {
+  background-color: red;
+}
+@media only screen and (max-width: 576px) {
+  .btn {
+    font-size: 12px;
+    background-color: aqua;
+  }
+}
+@media only screen and (min-width: 577px) and (max-width: 768px) {
+  .btn {
+    font-size: 24px;
+    background-color: green;
+  }
+}
+@media only screen and (min-width: 993px) and (max-width: 1200px) {
+  .btn {
+    font-size: 36px;
+    background-color: yellow;
+  }
+}

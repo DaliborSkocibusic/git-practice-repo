@@ -1,0 +1,33 @@
+//  @use "../style.scss";
+
+@mixin flex {
+    display: flex;
+    justify-content: center;
+}
+
+%flex-placeholder {
+    display: flex;
+    justify-content: center;
+}
+
+// Mixin
+@mixin size-modifier($small, $large) {
+    &--sm {
+        font-size: $small;
+    }
+
+    &--lg {
+        font-size: $large;
+    }
+}
+
+.box {
+    background-color: grey;
+    color: darkblue;
+
+    @include flex;
+
+    &__desc {
+        @include size-modifier(12px, 24px);
+    }
+}

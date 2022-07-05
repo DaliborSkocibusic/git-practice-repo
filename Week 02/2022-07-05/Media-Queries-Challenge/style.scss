@@ -1,0 +1,99 @@
+@use "./Partials/devices";
+
+* {
+    margin: 0px;
+    border: 0px;
+}
+
+@mixin set-color($color) {
+    background-color: $color;
+}
+
+.flag {
+    display: flex;
+    height: 300px;
+    width: 500px;
+    border: 1px solid black;
+
+    &__stripe {
+        height: 100%;
+        width: 1fr 1fr 1fr;
+
+        &--one {
+            @include devices.german-flag;
+            width: 100%;
+            height: calc(100% / 3);
+            background-color: black;
+        }
+
+        &--two {
+            @include devices.german-flag;
+            width: 100%;
+            height: calc(100% / 3);
+            background-color: red;
+        }
+    }
+}
+
+.stripe-one {
+    width: 33vw;
+    //height: 50vh;
+    height: 100px;
+
+    @include devices.german-flag {
+        grid-template-columns: 1fr 1fr 1fr;
+        @include set-color(black);
+    }
+
+    @include devices.belgian-flag {
+        grid-template-rows: 1fr 1fr 1fr;
+        @include set-color(red);
+    }
+
+    @include devices.irish-flag {
+        grid-template-columns: 1fr 1fr 1fr;
+        @include set-color(green);
+    }
+}
+
+.stripe-two {
+    width: 33vw;
+    //height: 50vh;
+    height: 100px;
+
+    @include devices.german-flag {
+        grid-template-columns: 1fr 1fr 1fr;
+        @include set-color(red);
+    }
+
+    @include devices.belgian-flag {
+        grid-template-rows: 1fr 1fr 1fr;
+        @include set-color(yellow);
+    }
+
+    @include devices.irish-flag {
+        grid-template-columns: 1fr 1fr 1fr;
+        @include set-color(white);
+    }
+}
+
+.stripe-three {
+    width: 33vw;
+    //height: 50vh;
+    height: 100px;
+
+    @include devices.german-flag {
+        grid-template-columns: 1fr 1fr 1fr;
+        @include set-color(yellow);
+    }
+
+    @include devices.belgian-flag {
+        grid-template-rows: 1fr 1fr 1fr;
+        @include set-color(red);
+    }
+
+    @include devices.irish-flag {
+        grid-template-columns: 1fr 1fr 1fr;
+        @include set-color(orange);
+    }
+}

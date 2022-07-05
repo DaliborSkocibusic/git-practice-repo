@@ -1,0 +1,64 @@
+@use "./modules/box.scss";
+
+// Placeholder - uses % sign
+
+@mixin flex {
+    display: flex;
+    justify-content: center;
+}
+
+%buttons-style {
+    background-color: coral;
+    color: white;
+}
+
+%flex-placeholder {
+    display: flex;
+    justify-content: center;
+}
+
+// @mixin flex {
+//     display: flex;
+//     justify-content: center;
+// }
+
+// Mixin
+@mixin size-modifier($small, $large) {
+    &--sm {
+        font-size: $small;
+    }
+
+    &--lg {
+        font-size: $large;
+    }
+}
+
+.blog {
+    @extend .box;
+    color: red;
+
+    // @include flex;
+
+    &__desc {
+        @include size-modifier(12px, 24px);
+    }
+}
+
+.blog2 {
+
+    @include flex;
+    // @extend %flex-placeholder;
+}
+
+.blog3 {
+    @extend %flex-placeholder;
+}
+
+.btn {
+    @extend %buttons-style;
+}
+
+.chip {
+    @extend %buttons-style;
+    background-color: rgb(15, 132, 9);
+}

@@ -1,0 +1,68 @@
+@use "./Partials/devices";
+
+* {
+    margin: 0px;
+    border: 0px;
+}
+
+@mixin set-btn($fs, $bgc) {
+    font-size: $fs;
+    background-color: $bgc;
+}
+
+.btn {
+    background-color: red;
+
+    @include devices.phone {
+        @include set-btn(12px, aqua);
+    }
+
+    @include devices.tablet {
+        @include set-btn(24px, green);
+    }
+
+    @include devices.laptop {
+        @include set-btn(36px, yellow);
+    }
+}
+
+.gallery {
+    @include devices.phone {
+        grid-template-columns: 1fr;
+        img {
+            width: 90vw;
+        }
+    }
+
+    @include devices.phone {
+        //2 columns same size fr - fractions
+        grid-template-columns: 1fr 1fr;
+        img {
+            width: 45vw;
+        }
+    }
+
+    @include devices.tablet-landscape {
+        //2 columns same size fr - fractions
+        grid-template-columns: 1fr 1fr 1fr;
+        img {
+            width: 30vw;
+        }
+    }
+
+    @include devices.laptop {
+        //2 columns same size fr - fractions
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        img {
+            width: 25vw;
+        }
+    }
+
+    @include devices.largest {
+        //2 columns same size fr - fractions
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        img {
+            width: 20vw;
+        }
+    }
+}
