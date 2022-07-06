@@ -1,0 +1,19 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 200px;
+    border: 1px solid blue;
+    padding: 8px;
+}
+
+.box {
+    width: 300px;
+    height: 150px;
+    border: 1px solid red;
+}
+
+.button {
+    right: 10px;
+    bottom: 10px;
+}
