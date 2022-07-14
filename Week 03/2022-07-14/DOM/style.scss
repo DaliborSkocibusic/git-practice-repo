@@ -1,0 +1,40 @@
+.container {
+    width: 300px;
+    border: 1px solid black;
+    text-align: center;
+    margin: 20px;
+    padding: 20px;
+    background-color: lightyellow;
+    border-radius: 10px;
+
+    &--nightMode {
+        border: 2px solid white;
+        background-color: orange;
+    }
+}
+
+input {
+    text-align: center;
+}
+
+h2 {
+    color: black;
+
+    &--nightMode {
+        color: white;
+    }
+}
+
+.button {
+    border-radius: 10px;
+
+    &--nightMode {
+        border: 2px solid white;
+        color: white;
+        background-color: black;
+    }
+}
+
+.body {
+    background-color: lightblue;
+}
