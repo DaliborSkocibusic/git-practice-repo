@@ -10,40 +10,39 @@
 // timeout: the delay time, should default to 2.5 seconds
 // Call this function twice with different arrays, callbacks and timeouts
 // After each promise resolves print the list to the console
-// BONUS: throw an error if the callback is not a function
+// BONUS: throw an error if the callback is not a functionnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn
 
 function delayedFilter(arr, callBack, timeout = 2500) {
-    const myPromise = new Promise((resolve, reject) => {
+    return new Promise((resolve, reject) => {
         setTimeout(() => {
             if (typeof callBack === "function") {
-                resolve(callBack(arr));
-            } else reject("Not a function");
+                resolve(arr.filter(callBack));
+            } else reject(new Error("Not a function"));
         }, timeout);
     });
-    return myPromise;
 }
 
 const arr1 = [1, 2, 3, 4, 5, 6, 7, 8];
 const arr2 = [20, 73, 48, 55, 64, 7, 8];
 
-const myFunc = (arr) => {
-    return arr.filter((value) => value % 2 === 0);
-};
+// const myFunc = (arr) => {
+//     return arr.(value) => value % 2 === 0);
+// };
 
-delayedFilter(arr1, myFunc, 1000)
+delayedFilter(arr1, (num) => num >= 7, 1000)
     .then((value) => console.log(value))
     .catch((error) => console.log(error));
 
-delayedFilter(arr2, myFunc, 500)
-    .then((value) => console.log(value))
-    .catch((error) => console.log(error));
-
-delayedFilter(arr2, myFunc, 2000)
+delayedFilter(arr2, (num) => num >= 50, 500)
     .then((value) => console.log(value))
     .catch((error) => console.log(error));
 
 delayedFilter(arr2, "abc", 2000)
     .then((value) => console.log(value))
     .catch((error) => console.log(error));
-    
-console.log("did it die");
+
+// delayedFilter(arr2, myFunc, 2000)
+//     .then((value) => console.log(value))
+//     .catch((error) => console.log(error));
+
+// console.log("did it die");

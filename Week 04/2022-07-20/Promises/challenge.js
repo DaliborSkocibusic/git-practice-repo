@@ -12,42 +12,44 @@ timeout should have a default value of 2500 if not provided
 */
 
 function delayedIncDec(n, mode, timeout = 2500) {
+    // alt way to set default value
+    // const timeout = timeout || 2500;
+
     // n - number
     // mode - string. "inc" or "dec"
     // inc will cause the function to increment by 1
     // dec will cause the function to decrement by 1
     // delay time (ms)
-    try {
-        const myPromise = new Promise((resolve, reject) => {
-            if (mode === "inc") {
-                setTimeout(() => {
-                    resolve(n + 1);
-                    console.log(n + 1);
-                }, timeout);
-            } else if (mode === "dec") {
-                setTimeout(() => {
-                    resolve(n - 1);
-                    console.log(n - 1);
-                }, timeout);
-            } else reject("Did not work");
-        });
-        return myPromise;
-    } catch (error) {
-        console.log(error.message);
-    }
+    return new Promise((resolve, reject) => {
+        if (mode === "inc") {
+            setTimeout(() => {
+                resolve(n + 1);
+                // console.log(n + 1);
+            }, timeout);
+        } else if (mode === "dec") {
+            setTimeout(() => {
+                resolve(n - 1);
+                // console.log(n - 1);
+            }, timeout);
+        } else reject("Did not work");
+    });
 }
 
-console.log("Promise returned:" + delayedIncDec(10, "inc", 1000));
-console.log(
-    "My promise then: " +
-        delayedIncDec(10, "dec", 1000).then((value) => console.log(value)),
+delayedIncDec(10, "inc", 1000).then((num) =>
+    console.log("The incremented number is " + num),
 );
-console.log("Promise returned:" + delayedIncDec(50, "dec", 500));
-console.log("Promise returned:" + delayedIncDec(20, "inc", 2000));
+
+delayedIncDec(10, "dec", 1000).then((num) =>
+    console.log("The incremented number is " + num),
+);
+delayedIncDec(50, "dec", 500).then((num) =>
+    console.log("The incremented number is " + num),
+);
+delayedIncDec(20, "inc", 2000).then((num) =>
+    console.log("The incremented number is " + num),
+);
 // console.log(delayedIncDec(20, "abc", 2000));
-console.log(
-    "My promise then: " +
-        delayedIncDec(20, "abc", 2000)
-            .then((value) => console.log(value))
-            .catch((value) => console.log(value)),
-);
+
+delayedIncDec(20, "abc", 2000)
+    .then((num) => console.log("The incremented number is " + num))
+    .catch((num) => console.log("The incremented number is " + num));
