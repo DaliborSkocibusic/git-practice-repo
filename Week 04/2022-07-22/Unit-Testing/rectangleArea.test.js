@@ -5,6 +5,7 @@ import { rectangleArea } from "./rectangleArea";
 
 const incorrectParamTypeError = new Error("Width and height should be numbers");
 const notEnoughParams = new Error("Two arguments need to be provided");
+const negativeParamError = new Error("Arguments need to be positive");
 
 describe("Tests for a fn for area of a rectangle", () => {
     // also same as test(). it() === test()
@@ -25,6 +26,12 @@ describe("Tests for a fn for area of a rectangle", () => {
         expect(() => {
             rectangleArea(12);
         }).toThrowError(notEnoughParams);
+    });
+
+    it("Should throw an error if one or more of the arguments is negative:", () => {
+        expect(() => {
+            rectangleArea(-1, -2);
+        }).toThrowError(negativeParamError);
     });
 });
 

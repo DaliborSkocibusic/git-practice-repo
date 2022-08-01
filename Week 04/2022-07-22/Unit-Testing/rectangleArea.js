@@ -4,7 +4,7 @@ export const rectangleArea = (length, width) => {
     }
 
     if (length <= 0 || width <= 0) {
-        throw new Error("Width and Height must be positive number");
+        throw new Error("Arguments need to be positive");
     }
 
     if (length === undefined || width === undefined) {
